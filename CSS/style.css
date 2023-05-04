@@ -7,6 +7,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Nguyên tắc làm: 
@@ -22,6 +23,7 @@ html {
 4. Kiểu dáng (kiểu chữ, hình dạng, ...)
 */
 
+/* Common */
 .clear{
     clear: both;
 }
@@ -30,6 +32,68 @@ html {
     color: #fff !important;
 }
 
+.text-center{
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: calc(100%/3);
+}
+
+/* Main */
 #main {
 
 }   
@@ -149,7 +213,7 @@ html {
 }
 
 #content .cotent-section {
-    padding: 64px 0px;
+    padding: 64px 0px 112px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -179,12 +243,6 @@ html {
 
 #content .member-list{
     margin-top: 47px;
-}
-
-#content .member-item{
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
 }
 
 #content .member-name{
@@ -236,17 +294,7 @@ html {
 
 /* Places */
 .places-list{
-    /* margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px; */
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
-}
-
-.place-item{
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 8px;
+    margin-top: 32px;
 }
 
 .place-img{
@@ -279,28 +327,67 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
-
-
-
 /* contact section */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map section */
+.map-section img {
+    width: 100%;
+}
 
 /* footer section */
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list  a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list  a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
 
 .modal{
     position: fixed;
