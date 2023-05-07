@@ -166,6 +166,14 @@ html {
     font-size: 14px;
 }
 
+#header .moblie-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .moblie-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -176,6 +184,16 @@ html {
     cursor: pointer;
 }
 
+#header .moblie-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .moblie-menu-btn:hover .menu-icon {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: white;
     font-size: 20px;
@@ -215,8 +233,11 @@ html {
 #content .cotent-section {
     padding: 64px 0px 112px;
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
