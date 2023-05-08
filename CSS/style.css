@@ -48,6 +48,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .btn{
     color: #fff;
     background-color: #000;
@@ -56,6 +60,9 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover{
@@ -204,7 +211,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/img/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/chicago.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -224,6 +231,7 @@ html {
 #slider .text-description{
     font-size: 15;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -263,7 +271,7 @@ html {
 }
 
 #content .member-list{
-    margin-top: 47px;
+    margin-top: 32px;
 }
 
 #content .member-name{
@@ -315,7 +323,7 @@ html {
 
 /* Places */
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img{
@@ -361,6 +369,15 @@ html {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form{
@@ -420,6 +437,7 @@ html {
     justify-content: center;
     align-items: center;
     display: none;
+    padding: 16px;
 }
 
 .modal.open{
